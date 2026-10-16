@@ -1,0 +1,9 @@
+; hello.ropasm — печатает "Hi!" и перевод строки
+        push 72
+        putc             ; H
+        push 105
+        putc             ; i
+        push 33
+        putc             ; !
+        push 10
+        putc             ; \n

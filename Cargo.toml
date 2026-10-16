@@ -1,0 +1,5 @@
+[package]
+name = "roplang"
+version = "0.1.0"
+edition = "2021"
+description = "Low-level esoteric language executed through SHA-256"

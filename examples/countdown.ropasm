@@ -1,0 +1,17 @@
+; countdown.ropasm — пример программы на roplang
+; печатает 3 2 1, каждое число на своей строке
+        push 3
+        store 0          ; слот 0 = счётчик
+loop:
+        load 0
+        putn
+        push 10
+        putc             ; newline
+        load 0
+        push 1
+        sub
+        store 0
+        load 0
+        push 0
+        gt               ; счётчик > 0 ?
+        jnz loop
